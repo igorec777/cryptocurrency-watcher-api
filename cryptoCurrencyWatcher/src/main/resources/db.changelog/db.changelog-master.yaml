@@ -1,0 +1,3 @@
+databaseChangeLog:
+  - include:
+      file: classpath:/db.changelog/changeset.1/changes-TASK-001-11.07.2022.sql

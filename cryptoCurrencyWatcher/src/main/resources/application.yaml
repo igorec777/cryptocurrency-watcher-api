@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: crypto-currency
+  datasource:
+    url: jdbc:postgresql://localhost:5432/crypto_currency_db
+    driver-class-name: org.postgresql.Driver
+    username: ENC(oqro94ArgAjI18KHht1pzrJgOLqwApCnJDH4wsE3ZsgDai00tEnxh3A1HlYG37iN)
+    password: ENC(EX54gbel2W7qVBv4Kj8MqSLP4WYoZt2sEej7QvmrDWud6LFggA3wIOR8D1bCmURw)
+  liquibase:
+    change-log: classpath:db.changelog/db.changelog-master.yaml
+    enabled: true
+
+server:
+  port: 8080
+
+crypto-api:
+  url:
+    all-tickers: https://api.coinlore.net/api/tickers/
+
+jasypt:
+  encryptor:
+    password: secret
